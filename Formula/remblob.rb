@@ -5,21 +5,21 @@
 class Remblob < Formula
   desc "Edit remote files locally."
   homepage "https://github.com/techiecaro/remblob"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.0/remblob_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "79be80e9e7d0e49a4148eabf6f65b72582c2c8193bd1088a0bd20dee7fe38b7a"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "248e5f14c57853c1c5398c732d1862c6249adc35011400a9483103bc3f07a8e3"
 
       def install
         bin.install "remblob"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.0/remblob_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "c616cbb21e42fcf86fe1664d61dc681eff8f46846116366d69fd841efafafd39"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "6618615d2bbdd6e0a6cc8d7054416e2eb9a835faa2e94e0cf3d05407f81d1f30"
 
       def install
         bin.install "remblob"
@@ -29,16 +29,16 @@ class Remblob < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.0/remblob_0.1.0_Linux_arm64.tar.gz"
-      sha256 "cf34d61baca2a4ad45ced8c051036cd3ebf7ab604289dd8dbf1086abd33c0701"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Linux_arm64.tar.gz"
+      sha256 "d7b0f214c8b700146abb64fe064e19fd0c404b4736a1654076a2e983c05e8eb9"
 
       def install
         bin.install "remblob"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.0/remblob_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "69c5605b9171489452b04f4e6003cb0f2a859b6dc50034166f4944efbc9a0dc1"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "7e56e57733701bb46d89155f0970b4f8da74daf8d85637f0935853c237efe721"
 
       def install
         bin.install "remblob"
@@ -47,4 +47,5 @@ class Remblob < Formula
   end
 
   depends_on "go" => :optional
+  depends_on "git"
 end
