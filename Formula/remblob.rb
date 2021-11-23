@@ -5,21 +5,21 @@
 class Remblob < Formula
   desc "Edit remote files locally."
   homepage "https://github.com/techiecaro/remblob"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "248e5f14c57853c1c5398c732d1862c6249adc35011400a9483103bc3f07a8e3"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.2.0/remblob_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "3397c0edfee0d4b274658e00cb23cf890675acda59d5886737a6a6c43a012161"
 
       def install
         bin.install "remblob"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "6618615d2bbdd6e0a6cc8d7054416e2eb9a835faa2e94e0cf3d05407f81d1f30"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.2.0/remblob_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "7c9e07be4a6e04df2220fe86aea95c427aa440682f94b1097a7a0876e9b34c4a"
 
       def install
         bin.install "remblob"
@@ -29,16 +29,16 @@ class Remblob < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Linux_arm64.tar.gz"
-      sha256 "d7b0f214c8b700146abb64fe064e19fd0c404b4736a1654076a2e983c05e8eb9"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.2.0/remblob_0.2.0_Linux_arm64.tar.gz"
+      sha256 "391a684d193f2df70b5508a9b37cecc3995d7fe8dc624eb5de82c7111887dc18"
 
       def install
         bin.install "remblob"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/techiecaro/remblob/releases/download/v0.1.1/remblob_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "7e56e57733701bb46d89155f0970b4f8da74daf8d85637f0935853c237efe721"
+      url "https://github.com/techiecaro/remblob/releases/download/v0.2.0/remblob_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "5b09a0d987229c0961514b19b70107bacea9ba85ac27f686694aa5167fac2f15"
 
       def install
         bin.install "remblob"
