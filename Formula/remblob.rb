@@ -28,14 +28,14 @@ class Remblob < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/techiecaro/remblob/releases/download/v0.3.2/remblob_0.3.2_linux_amd64.tar.gz"
       sha256 "2a139037fc86951862ca01bd1fbf6cb8508011ee263ce174fba696b2ff405068"
       def install
         bin.install "remblob"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/techiecaro/remblob/releases/download/v0.3.2/remblob_0.3.2_linux_arm64.tar.gz"
       sha256 "0e147e28faf3891169b7455f0f025218a429f787db494241048d856b394fad9b"
       def install
